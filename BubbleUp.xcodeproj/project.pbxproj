@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05262EC62B00DF3700278FBB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05262EC52B00DF3000278FBB /* MapViewController.swift */; };
-		411F0AB62B010C580054800E /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411F0AB52B010C580054800E /* Main2.storyboard */; };
 		416CA5F22B0033850055E281 /* keripik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416CA5F12B0033850055E281 /* keripik.ttf */; };
 		5A56E98F2B002A5700908226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E98E2B002A5700908226 /* AppDelegate.swift */; };
 		5A56E9912B002A5700908226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E9902B002A5700908226 /* SceneDelegate.swift */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		05262EC42B00D9AA00278FBB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		05262EC52B00DF3000278FBB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		411F0AB52B010C580054800E /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		416CA5F12B0033850055E281 /* keripik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = keripik.ttf; sourceTree = "<group>"; };
 		5A56E98B2B002A5700908226 /* BubbleUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A56E98E2B002A5700908226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				5A56E99C2B002A5900908226 /* Info.plist */,
 				5A56E9A32B002AAF00908226 /* HomeViewController.swift */,
 				5A6BA9152B005E6000B7BEEE /* SettingViewController.swift */,
-				411F0AB52B010C580054800E /* Main2.storyboard */,
 			);
 			path = BubbleUp;
 			sourceTree = "<group>";
@@ -156,7 +153,6 @@
 				5A56E99B2B002A5900908226 /* LaunchScreen.storyboard in Resources */,
 				5A56E9982B002A5900908226 /* Assets.xcassets in Resources */,
 				416CA5F22B0033850055E281 /* keripik.ttf in Resources */,
-				411F0AB62B010C580054800E /* Main2.storyboard in Resources */,
 				5A56E9962B002A5700908226 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

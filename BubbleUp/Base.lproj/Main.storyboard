@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -49,7 +49,7 @@
                                     <color key="baseBackgroundColor" red="0.29960481220000001" green="0.4942497823" blue="0.67035949230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="i9a-hB-Ayk" kind="presentation" id="EEU-aD-Tof"/>
+                                    <segue destination="Ys2-1g-iu2" kind="presentation" modalPresentationStyle="fullScreen" id="PVq-a4-h9F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzy-5x-hYb">
@@ -299,8 +299,8 @@
                                     <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
                                 </state>
                             </button>
-                            <mapView clipsSubviews="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEu-z0-aUh">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                            <mapView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEu-z0-aUh">
+                                <rect key="frame" x="0.0" y="85" width="414" height="811"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-x8-SgJ">
                                 <rect key="frame" x="20" y="55" width="33" height="22"/>
@@ -339,7 +339,7 @@
             <objects>
                 <viewController id="i9a-hB-Ayk" customClass="MapViewController" customModule="BubbleUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WtP-V3-ggD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-wb-heE">
@@ -412,7 +412,7 @@
                                     <color key="baseBackgroundColor" red="0.29960481220000001" green="0.4942497823" blue="0.67035949230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ys2-1g-iu2" kind="presentation" modalPresentationStyle="fullScreen" id="HBK-CN-zBd"/>
+                                    <segue destination="Ys2-1g-iu2" kind="presentation" modalPresentationStyle="fullScreen" id="qTb-xY-tsN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXO-su-I7K">
@@ -432,6 +432,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-mi-EUy">
+                                <rect key="frame" x="169" y="507" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign In"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                                    <color key="baseBackgroundColor" red="0.29960481220000001" green="0.4942497823" blue="0.67035949230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Urm-hZ-BSy"/>
                         <color key="backgroundColor" red="0.75485247369999997" green="0.81891471149999995" blue="0.85883766409999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -446,7 +455,7 @@
             <objects>
                 <viewController id="PX2-cd-5zA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o2u-sp-bNT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubble" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-Ix-Ens">
@@ -509,7 +518,7 @@
             <objects>
                 <viewController id="2mC-Fc-VG7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ruh-tb-Quc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubble" translatesAutoresizingMaskIntoConstraints="NO" id="9zV-Oo-rEH">
@@ -619,7 +628,7 @@
             <objects>
                 <viewController id="rqq-Tu-6V2" customClass="SettingViewController" customModule="BubbleUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cCN-Sh-R5O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BlowingBubbleLeft" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-Uh-OBO">
@@ -667,8 +676,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-eU-NbO">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                            <mapView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-eU-NbO">
+                                <rect key="frame" x="0.0" y="99" width="414" height="797"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUK-vu-49U">
                                 <rect key="frame" x="344" y="45" width="50" height="50"/>
@@ -759,7 +768,7 @@
             <objects>
                 <viewController id="yiW-vr-Ypb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2N-i4-ktQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BlowingBubble" translatesAutoresizingMaskIntoConstraints="NO" id="r4B-N3-sI4">
@@ -821,7 +830,7 @@
             <objects>
                 <viewController id="ZxX-FK-71D" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0bT-Al-ZdA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BlowingBubbleCenter" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-gM-eyJ">
@@ -861,7 +870,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sVD-ZN-bhg"/>
+        <segue reference="6be-Mh-IDD"/>
+        <segue reference="PVq-a4-h9F"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
@@ -872,8 +882,8 @@
         <image name="BubbleUp_bubble" width="619" height="640"/>
         <image name="BubbleUp_bubble1" width="2480" height="3508"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
-        <image name="person.2.fill" catalog="system" width="128" height="81"/>
-        <image name="person.fill.badge.plus" catalog="system" width="128" height="125"/>
+        <image name="person.2.fill" catalog="system" width="128" height="86"/>
+        <image name="person.fill.badge.plus" catalog="system" width="128" height="126"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="wand" width="160" height="160"/>
