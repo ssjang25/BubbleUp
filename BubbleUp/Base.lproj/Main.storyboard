@@ -374,6 +374,29 @@
             </objects>
             <point key="canvasLocation" x="1994" y="143"/>
         </scene>
+        <!--Attendees View Controller-->
+        <scene sceneID="QG7-Bm-ID5">
+            <objects>
+                <viewController restorationIdentifier="AttendeesViewController" storyboardIdentifier="AttendeesViewController" id="ac4-zO-r3x" customClass="AttendeesViewController" customModule="BubbleUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GcA-FF-sda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Participants List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-iq-Z5k">
+                                <rect key="frame" x="141" y="81" width="132" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FpI-Fm-JMq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIq-WK-ES1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="-25"/>
+        </scene>
         <!--Signin View Controller-->
         <scene sceneID="OQr-4y-CT9">
             <objects>
@@ -432,15 +455,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-mi-EUy">
-                                <rect key="frame" x="169" y="507" width="76" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Sign In"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
-                                    <color key="baseBackgroundColor" red="0.29960481220000001" green="0.4942497823" blue="0.67035949230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Urm-hZ-BSy"/>
                         <color key="backgroundColor" red="0.75485247369999997" green="0.81891471149999995" blue="0.85883766409999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -738,6 +752,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ofT-7M-U4I"/>
+                    <connections>
+                        <outlet property="mapView" destination="dgs-eU-NbO" id="4De-vv-fYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhQ-sM-70x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
