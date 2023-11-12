@@ -22,6 +22,8 @@
 /* Begin PBXFileReference section */
 		05262EC42B00D9AA00278FBB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		05262EC52B00DF3000278FBB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		411F0AB42B010C4F0054800E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BubbleUp/Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
+		411F0AB82B010CC50054800E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = BubbleUp/Main.storyboard; sourceTree = "<group>"; };
 		416CA5F12B0033850055E281 /* keripik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = keripik.ttf; sourceTree = "<group>"; };
 		5A56E98B2B002A5700908226 /* BubbleUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A56E98E2B002A5700908226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		5A56E9822B002A5700908226 = {
 			isa = PBXGroup;
 			children = (
+				411F0AB82B010CC50054800E /* Main.storyboard */,
+				411F0AB32B010C4F0054800E /* Main2.storyboard */,
 				05262EC42B00D9AA00278FBB /* TestPlan.xctestplan */,
 				5A56E98D2B002A5700908226 /* BubbleUp */,
 				5A56E98C2B002A5700908226 /* Products */,
@@ -176,6 +180,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		411F0AB32B010C4F0054800E /* Main2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411F0AB42B010C4F0054800E /* Base */,
+			);
+			name = Main2.storyboard;
+			sourceTree = "<group>";
+		};
 		5A56E9942B002A5700908226 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
