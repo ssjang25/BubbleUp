@@ -32,6 +32,10 @@
                                 <rect key="frame" x="145" y="453" width="102" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pointer" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2N6-WJ-crk">
+                                <rect key="frame" x="228" y="408" width="66" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75602275979861711" green="0.81859959210385813" blue="0.86078917980194092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -47,5 +51,6 @@
         <image name="BubbleUp_bubble" width="2480" height="3508"/>
         <image name="BubbleUp_bubbleTitle" width="1145" height="633"/>
         <image name="BubbleUp_upTitle" width="551" height="498"/>
+        <image name="pointer" width="479" height="512"/>
     </resources>
 </document>
