@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		416CA5F22B0033850055E281 /* keripik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416CA5F12B0033850055E281 /* keripik.ttf */; };
+		41E499D22B005F8100B7088D /* LaunchScreenAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E499D12B005F8100B7088D /* LaunchScreenAssets.xcassets */; };
 		5A56E98F2B002A5700908226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E98E2B002A5700908226 /* AppDelegate.swift */; };
 		5A56E9912B002A5700908226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E9902B002A5700908226 /* SceneDelegate.swift */; };
 		5A56E9932B002A5700908226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E9922B002A5700908226 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		416CA5F12B0033850055E281 /* keripik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = keripik.ttf; sourceTree = "<group>"; };
+		41E499D12B005F8100B7088D /* LaunchScreenAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchScreenAssets.xcassets; sourceTree = "<group>"; };
 		5A56E98B2B002A5700908226 /* BubbleUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A56E98E2B002A5700908226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A56E9902B002A5700908226 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				5A56E9992B002A5900908226 /* LaunchScreen.storyboard */,
 				5A56E99C2B002A5900908226 /* Info.plist */,
 				5A56E9A32B002AAF00908226 /* HomeViewController.swift */,
+				41E499D12B005F8100B7088D /* LaunchScreenAssets.xcassets */,
 			);
 			path = BubbleUp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				5A56E99B2B002A5900908226 /* LaunchScreen.storyboard in Resources */,
 				5A56E9982B002A5900908226 /* Assets.xcassets in Resources */,
+				41E499D22B005F8100B7088D /* LaunchScreenAssets.xcassets in Resources */,
 				416CA5F22B0033850055E281 /* keripik.ttf in Resources */,
 				5A56E9962B002A5700908226 /* Main.storyboard in Resources */,
 			);
