@@ -23,22 +23,10 @@ class customPin: NSObject, MKAnnotation {
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
-    //    @IBOutlet weak var map: MKMapView!
     
-    
-    //    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-//    let initialLocation = CLLocationCoordinate2D(latitude: 42.39345021529907, longitude: -72.52553640890095) // Example coordinates (San Francisco)
-//    let regionRadius: CLLocationDistance = 15000 // Adjust this value for your desired zoom level
-//    let coordinateRegion = MKCoordinateRegion(
-//        center: initialLocation,
-//        latitudinalMeters: regionRadius * 2.0,
-//        longitudinalMeters: regionRadius * 2.0
-//    )
-//
-//    mapView.setRegion(coordinateRegion, animated: true)
         // Set the initial region
         let initialLocation = CLLocationCoordinate2D(latitude: 42.39345021529907, longitude: -72.52553640890095)
         let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
@@ -49,46 +37,38 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         displayLocation()
         self.mapView.delegate = self
-        
+        fetchLocations()
 
     }
 
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation{
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            if annotation is MKUserLocation{
+                return nil
+            }
+            var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
+            if let originalImage = UIImage(named: "BubbleUp_bubble1") {
+            
+                let targetWidth: CGFloat = 2 // or any other desired width
+                let aspectRatio = originalImage.size.width / originalImage.size.height
+                let targetHeight = targetWidth / aspectRatio
+
+                let size = CGSize(width: targetWidth, height: targetHeight)
+
+                UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+                originalImage.draw(in: CGRect(origin: CGPoint.zero, size: size))
+                let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
+
+                annotationView.image = resizedImage
+                annotationView.canShowCallout = true
+
+                return annotationView
+            }
+
             return nil
         }
-        var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
-
-//            annotationView.image = UIImage(named: "BubbleUp_bubble1")
-//            annotationView.canShowCallout = true
-//
-//            return annotationView
-        if let originalImage = UIImage(named: "BubbleUp_bubble1") {
-        
-            let regionSpan = mapView.region.span
-            let zoomLevel = log2(360.0 / Double(regionSpan.longitudeDelta)) + 1.0
-            let scaleFactor = pow(2, zoomLevel) / 900.0  // Adjust this factor as needed
-            let aspectRatio = originalImage.size.width / originalImage.size.height
-            let targetHeight = scaleFactor / aspectRatio
-            
-            let size = CGSize(width: scaleFactor, height: targetHeight)
-
-//                let size = CGSize(width: 2, height: 2)
-            UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-            originalImage.draw(in: CGRect(origin: CGPoint.zero, size: size))
-            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-
-            annotationView.image = resizedImage
-            annotationView.canShowCallout = true
-
-            return annotationView
-        }
-
-        return nil
-    }
-
+    
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
             updateAnnotationImages(for: mapView)
         }
@@ -100,10 +80,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                         let regionSpan = mapView.region.span
                         let zoomLevel = log2(360.0 / Double(regionSpan.longitudeDelta)) + 1.0
                         let scaleFactor = pow(2, zoomLevel) / 900.0  // Adjust this factor as needed
-                        let aspectRatio = originalImage.size.width / originalImage.size.height
-                        let targetHeight = scaleFactor / aspectRatio
-                        
-                        let size = CGSize(width: scaleFactor, height: targetHeight)
+                        let size = CGSize(width: scaleFactor, height: scaleFactor)
 
                         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
                         originalImage.draw(in: CGRect(origin: CGPoint.zero, size: size))
@@ -116,34 +93,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             }
         }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-            if let annotationTitle = view.annotation?.title {
-                print("Clicked on annotation: \(annotationTitle!)")
-                let alertController = UIAlertController(title: "Annotation Menu", message: "Do you want to perform an action?", preferredStyle: .actionSheet)
 
-                // Add an action to the menu
-                let action = UIAlertAction(title: "View Attendees", style: .default) { (action) in
-                    print("Clicked on annotation:")
-                    // Instantiate the view controller you want to navigate to
-//                    let attendeesViewController = EventViewController()
-//                    
-//                    // Push the new view controller onto the navigation stack
-//                    self.navigationController?.pushViewController(attendeesViewController, animated: true)
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil);
-                   let vc = storyboard.instantiateViewController(withIdentifier: "EventViewController")
-                    self.present(vc, animated: true, completion: nil);
-                }
-                alertController.addAction(action)
-
-                // Add a cancel action to dismiss the menu
-                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                alertController.addAction(cancelAction)
-
-                // Present the menu
-                present(alertController, animated: true, completion: nil)
-            }
-        }
-//
     func displayLocation(){
         
         let locations = [["title":"Mumbai", "latitude":42.39417125812856, "longitude": -72.5251287131496],["title":"Mumbai2", "latitude":42.39407617603182, "longitude": -72.52949534922335],["title":"Mumbai3", "latitude":42.3897022438628, "longitude": -72.52839027916046],["title":"Mumbai4", "latitude":16.3, "longitude": 71.5]]
