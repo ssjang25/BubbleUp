@@ -100,7 +100,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
 //                    // Push the new view controller onto the navigation stack
 //                    self.navigationController?.pushViewController(attendeesViewController, animated: true)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil);
-                   let vc = storyboard.instantiateViewController(withIdentifier: "EventViewController")
+                   let vc = storyboard.instantiateViewController(withIdentifier: "AttendeesViewController")
                     self.present(vc, animated: true, completion: nil);
                 }
                 alertController.addAction(action)

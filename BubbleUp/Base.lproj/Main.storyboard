@@ -374,6 +374,29 @@
             </objects>
             <point key="canvasLocation" x="1994" y="143"/>
         </scene>
+        <!--Attendees View Controller-->
+        <scene sceneID="QG7-Bm-ID5">
+            <objects>
+                <viewController restorationIdentifier="AttendeesViewController" storyboardIdentifier="AttendeesViewController" id="ac4-zO-r3x" customClass="AttendeesViewController" customModule="BubbleUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GcA-FF-sda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Participants List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-iq-Z5k">
+                                <rect key="frame" x="141" y="81" width="132" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FpI-Fm-JMq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIq-WK-ES1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="-25"/>
+        </scene>
         <!--Signin View Controller-->
         <scene sceneID="OQr-4y-CT9">
             <objects>
