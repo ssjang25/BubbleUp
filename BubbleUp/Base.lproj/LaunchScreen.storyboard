@@ -5,14 +5,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="keripik.ttf">
-            <string>Keripik</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -22,31 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-K7-gFV">
-                                <rect key="frame" x="97" y="207" width="196" height="388"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_babybubble" translatesAutoresizingMaskIntoConstraints="NO" id="uO6-g5-Nzc">
+                                <rect key="frame" x="16" y="160" width="222" height="613"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-tj-emh">
-                                <rect key="frame" x="77" y="361" width="90" height="222"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubble" translatesAutoresizingMaskIntoConstraints="NO" id="2Yq-8B-AKK">
+                                <rect key="frame" x="-23" y="-162" width="439" height="1170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Up" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="50" id="iEB-O7-6Lu">
-                                <rect key="frame" x="81" y="508" width="229" height="49.666666666666664"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubbleTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uIV-rg-SHN">
+                                <rect key="frame" x="91" y="175" width="211" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.47137005033223722" blue="0.86130033839642295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Keripik" family="Keripik" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" text="Bubble" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="50" id="s8s-3R-ltr">
-                                <rect key="frame" x="81" y="259" width="229" height="50"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_upTitle" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-WT-0as">
+                                <rect key="frame" x="145" y="453" width="102" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" systemColor="systemMintColor"/>
-                                <fontDescription key="fontDescription" name="Keripik" family="Keripik" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.75602275979861711" green="0.81859959210385813" blue="0.86078917980194092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,12 +43,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bubble" width="5000" height="5000"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="BubbleUp_babybubble" width="2480" height="3508"/>
+        <image name="BubbleUp_bubble" width="2480" height="3508"/>
+        <image name="BubbleUp_bubbleTitle" width="1145" height="633"/>
+        <image name="BubbleUp_upTitle" width="551" height="498"/>
     </resources>
 </document>
