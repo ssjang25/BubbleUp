@@ -115,7 +115,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
         }
     func displayLocation(){
         
-        let locations = [["title":"Cabtree Hall", "latitude":42.39417125812856, "longitude": -72.5251287131496],["title":"Gunnness", "latitude":42.39407617603182, "longitude": -72.52949534922335],["title":"Library", "latitude":42.3897022438628, "longitude": -72.52839027916046],["title":"Library", "latitude":16.3, "longitude": 71.5]]
+        let locations = [["title":"Cabtree Hall", "latitude":42.39417125812856, "longitude": -72.5251287131496],["title":"Gunnness", "latitude":42.39407617603182, "longitude": -72.52949534922335],["title":"Library", "latitude":42.3897022438628, "longitude": -72.52839027916046],["title":"Library", "latitude":16.3, "longitude": 71.5],["title":"Hotel Umass", "latitude":42.39174661964655, "longitude": -72.5268989709725],["title":"Franklin Commons", "latitude":42.389291829487696, "longitude": -72.52257828227515],["title":"Franklin Commons", "latitude":42.3898060689427, "longitude": -72.52454817672944]]
         
         
         for location in locations{
