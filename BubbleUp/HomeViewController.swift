@@ -34,7 +34,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
+//        mapView.showsUserLocation = true
     }
     
 
