@@ -1,6 +1,7 @@
 //HomeViewController is connected to the home screen (second screen in Main.storyboard)
 
 import UIKit
+import MapKit
 
 class HomeViewController: UIViewController {
 
