@@ -78,6 +78,7 @@
 		5A56E98D2B002A5700908226 /* BubbleUp */ = {
 			isa = PBXGroup;
 			children = (
+				05262EC72B00EB7000278FBB /* EventViewController.swift */,
 				05262EC52B00DF3000278FBB /* MapViewController.swift */,
 				416CA5F02B0033710055E281 /* Fonts */,
 				5A56E98E2B002A5700908226 /* AppDelegate.swift */,
@@ -170,6 +171,7 @@
 			files = (
 				5A6BA9162B005E6000B7BEEE /* SettingViewController.swift in Sources */,
 				5A56E9932B002A5700908226 /* SigninViewController.swift in Sources */,
+				05262EC82B00EB7300278FBB /* EventViewController.swift in Sources */,
 				5A56E98F2B002A5700908226 /* AppDelegate.swift in Sources */,
 				5A56E9912B002A5700908226 /* SceneDelegate.swift in Sources */,
 				05262EC62B00DF3700278FBB /* MapViewController.swift in Sources */,
