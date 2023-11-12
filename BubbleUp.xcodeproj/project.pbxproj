@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05262EC62B00DF3700278FBB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05262EC52B00DF3000278FBB /* MapViewController.swift */; };
 		416CA5F22B0033850055E281 /* keripik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416CA5F12B0033850055E281 /* keripik.ttf */; };
 		5A56E98F2B002A5700908226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E98E2B002A5700908226 /* AppDelegate.swift */; };
 		5A56E9912B002A5700908226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56E9902B002A5700908226 /* SceneDelegate.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05262EC42B00D9AA00278FBB /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		05262EC52B00DF3000278FBB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		416CA5F12B0033850055E281 /* keripik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = keripik.ttf; sourceTree = "<group>"; };
 		5A56E98B2B002A5700908226 /* BubbleUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A56E98E2B002A5700908226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		5A56E9822B002A5700908226 = {
 			isa = PBXGroup;
 			children = (
+				05262EC42B00D9AA00278FBB /* TestPlan.xctestplan */,
 				5A56E98D2B002A5700908226 /* BubbleUp */,
 				5A56E98C2B002A5700908226 /* Products */,
 			);
@@ -70,6 +74,7 @@
 		5A56E98D2B002A5700908226 /* BubbleUp */ = {
 			isa = PBXGroup;
 			children = (
+				05262EC52B00DF3000278FBB /* MapViewController.swift */,
 				416CA5F02B0033710055E281 /* Fonts */,
 				5A56E98E2B002A5700908226 /* AppDelegate.swift */,
 				5A56E9942B002A5700908226 /* Main.storyboard */,
@@ -163,6 +168,7 @@
 				5A56E9932B002A5700908226 /* SigninViewController.swift in Sources */,
 				5A56E98F2B002A5700908226 /* AppDelegate.swift in Sources */,
 				5A56E9912B002A5700908226 /* SceneDelegate.swift in Sources */,
+				05262EC62B00DF3700278FBB /* MapViewController.swift in Sources */,
 				5A56E9A42B002AAF00908226 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,13 +317,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HYTH5H87BC;
+				DEVELOPMENT_TEAM = DM8LPY3K46;
 				INFOPLIST_FILE = BubbleUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.BubbleUp;
+				PRODUCT_BUNDLE_IDENTIFIER = TestPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,13 +336,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HYTH5H87BC;
+				DEVELOPMENT_TEAM = DM8LPY3K46;
 				INFOPLIST_FILE = BubbleUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.BubbleUp;
+				PRODUCT_BUNDLE_IDENTIFIER = TestPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
