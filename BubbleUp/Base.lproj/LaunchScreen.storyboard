@@ -16,24 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_babybubble" translatesAutoresizingMaskIntoConstraints="NO" id="uO6-g5-Nzc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_babybubble1" translatesAutoresizingMaskIntoConstraints="NO" id="uO6-g5-Nzc">
                                 <rect key="frame" x="16" y="160" width="222" height="613"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BubbleUp_bubble" id="2Yq-8B-AKK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BubbleUp_bubble1" id="2Yq-8B-AKK">
                                 <rect key="frame" x="-24.866852645289327" y="-162.36256485440686" width="438.99999999999989" height="1170.0000000000005"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubbleTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uIV-rg-SHN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_bubbleTitle1" translatesAutoresizingMaskIntoConstraints="NO" id="uIV-rg-SHN">
                                 <rect key="frame" x="91" y="175" width="211" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_upTitle" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-WT-0as">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BubbleUp_upTitle1" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-WT-0as">
                                 <rect key="frame" x="145" y="453" width="102" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pointer" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2N6-WJ-crk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pointer1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2N6-WJ-crk">
                                 <rect key="frame" x="228" y="408" width="66" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -49,10 +49,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BubbleUp_babybubble" width="2480" height="3508"/>
-        <image name="BubbleUp_bubble" width="2480" height="3508"/>
-        <image name="BubbleUp_bubbleTitle" width="1145" height="633"/>
-        <image name="BubbleUp_upTitle" width="551" height="498"/>
-        <image name="pointer" width="479" height="512"/>
+        <image name="BubbleUp_babybubble1" width="2480" height="3508"/>
+        <image name="BubbleUp_bubble1" width="2480" height="3508"/>
+        <image name="BubbleUp_bubbleTitle1" width="1145" height="633"/>
+        <image name="BubbleUp_upTitle1" width="551" height="498"/>
+        <image name="pointer1" width="479" height="512"/>
     </resources>
 </document>
